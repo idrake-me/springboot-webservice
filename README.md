@@ -25,7 +25,8 @@ Entity의 PK
  Bean 주입 방법
   - @Autowired
   - setter
-  - ***생성자*** @RequiredArgsConstructor : final이 선언된 모든 필드를 인자값으로 하는 생성자
+  - ***생성자*** 
+      @RequiredArgsConstructor : final이 선언된 모든 필드를 인자값으로 하는 생성자
   
  Entity Class를 DTO Class로 사용 X
  
