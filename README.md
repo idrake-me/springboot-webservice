@@ -30,3 +30,12 @@ Entity의 PK
   
  Entity Class를 DTO Class로 사용 X
  
+@WebMvcTest
+ - JPA기능이 동작하지 않음 
+ - Controller, ControllerAdvice 등 외부 연동과 관련된 부분만 활성화
+   
+@WebMvcTest https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-testing-spring-boot-applications-testing-autoconfigured-mvc-tests
+@SpringBootTest & TestRestTemplate https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-testing-spring-boot-applications-testing-with-running-server
+
+dirty Checking!! JPA
+https://jojoldu.tistory.com/415
