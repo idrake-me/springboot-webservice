@@ -5,7 +5,7 @@ PROJECT_NAME=idrake-springboot-webservice
 
 echo "> Build 파일 복사"
 
-cp $REPOSITORY/zip/*.jar $REPOSITORY/.file
+cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 echo "> 현재 구동 중인 애플리케이선 pid 확인"
 
