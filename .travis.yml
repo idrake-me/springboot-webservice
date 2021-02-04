@@ -29,6 +29,17 @@ deploy:
     local_dir: deploy # before_deploy에서 생성한 디렉토리
     wait-untill-deploy: true
 
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: idrake-springboot-build
+    key: idrake-springboot-webservice.zip
+    bundle_type: zip
+    application: idrake-springboot-webservice
+    deployment_group: idrake-springboot-webservice-group
+    region: ap-northeast-2
+    wait-untill-deploy: true
+
 # CI 실행 완료시 메일로 알람
 notifications:
   email:
